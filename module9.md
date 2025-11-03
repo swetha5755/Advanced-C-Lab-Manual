@@ -13,11 +13,20 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int stack[40],top,i; void display()
+{
+for(i=top;i>=0;i--)
+{
+printf("%d\n",stack[i]);
+}
+}
+```
 
 Output:
 
-//paste your output here
+<img width="245" height="444" alt="image" src="https://github.com/user-attachments/assets/daff6c44-c56e-40a3-99c2-f4b70e3d2edf" />
+
 
 
 
@@ -36,11 +45,26 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int size=3,top=1; float stack[40];
+void push (float data)
+{
+if (top==size-1 )
+{
+printf("stack is full\n");
+}
+else
+{
+top ++; stack[top] = data;
+}
+}
+```
 
 Output:
 
-//paste your output here
+
+<img width="461" height="392" alt="image" src="https://github.com/user-attachments/assets/8aca62a6-2284-4d1b-9744-5447168ecd29" />
+
 
 
 
@@ -62,11 +86,27 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int queue[50], rear, front,i; void display()
+{
+if(front==-1)
+{
+printf("No elements to display");
+}
+else
+{
+for(i=front;i<=rear;i++)
+{
+printf("%d ",queue[i]);
+}
+}
+}
+```
 
 Output:
 
-//paste your output here
+
+<img width="505" height="419" alt="image" src="https://github.com/user-attachments/assets/0dc2973b-3128-4da0-8af1-325dc27d75ed" />
 
 
 Result:
@@ -86,11 +126,25 @@ Algorithm:
 
 Program:
 
-//type your code here
+```
+int size=4, rear=-1, front=-1; float queue[50];
+void enqueue(float data)
+{
+if(rear<size)
+{
+if(front==-1)
+{
+front=0;
+}
+rear=rear+1; queue[rear]=data;
+}
+}
+```
 
 Output:
 
-//paste your output here
+
+<img width="571" height="307" alt="image" src="https://github.com/user-attachments/assets/6efe6367-e199-421b-a4e9-e43d3306c7f1" />
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,11 +175,25 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
+```
+int front, rear;
+void dequeue()
+{
+    if(front==-1&&rear==-1)
+    printf("Queue Underflow.");
+    else if(front==rear)
+    front=rear=-1;
+    else{
+        front=front+1;
+    }
+}
+```
 
 Output:
 
-//paste your output here
+
+<img width="863" height="784" alt="image" src="https://github.com/user-attachments/assets/c87bec77-4966-4bdd-9c14-3603d654425e" />
+
 
 
 Result:
